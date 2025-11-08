@@ -1,113 +1,67 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>IBR 2014 EOOD — Bearing Experts</title>
-  <meta name="description" content="IBR 2014 EOOD — Trusted bearing supplier based in Sliven, Bulgaria. Bearings, logistics and fast delivery across Europe." />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IBR 2014 EOOD | Bearing Experts</title>
   <link rel="stylesheet" href="style.css" />
   <script defer src="script.js"></script>
 </head>
 <body>
-  <header class="site-header">
-    <div class="wrap">
-      <a class="brand" href="#"><span class="brand-name">IBR 2014 EOOD</span></a>
-      <nav class="top-nav" aria-label="Main">
-        <button id="lang-en" class="lang-btn" aria-pressed="true">English</button>
-        <button id="lang-bg" class="lang-btn">Български</button>
+  <header>
+    <div class="container">
+      <h1>IBR 2014 EOOD</h1>
+      <nav>
+        <button id="lang-en">English</button>
+        <button id="lang-bg">Български</button>
       </nav>
     </div>
   </header>
 
-  <main>
-
-    <section id="hero" class="hero" role="region" aria-label="Hero">
-      <div class="wrap hero-inner">
-        <div class="hero-copy">
-          <h1 data-en="Your Trusted Bearing Partner" data-bg="Вашият доверен партньор за лагери"></h1>
-          <p class="lead" data-en="High-quality bearings, fast delivery, and expert technical support across Europe."
-             data-bg="Висококачествени лагери, бърза доставка и експертна техническа поддръжка в цяла Европа."></p>
-          <p class="cta-row">
-            <a class="btn primary" href="#contact" data-en="Contact Us" data-bg="Свържете се с нас"></a>
-            <a class="btn ghost" href="#products" data-en="See Products" data-bg="Вижте продукти"></a>
-          </p>
-        </div>
-        <figure class="hero-media" aria-hidden="true">
-          <img src="IS_1708.webp" alt="" loading="lazy">
-        </figure>
-      </div>
-    </section>
-
-    <section id="about" class="section" aria-label="About">
-      <div class="wrap">
-        <h2 data-en="About Us" data-bg="За нас"></h2>
-        <p data-en="IBR 2014 EOOD is based in Sliven, Bulgaria. We specialize in bearings for industrial and automotive applications, combining quality products with fast logistics."
-           data-bg="IBR 2014 EOOD е базирана в Сливен, България. Специализираме в лагери за индустриални и автомобилни приложения, комбинирайки качествени продукти с бърза логистика."></p>
-      </div>
-    </section>
-
-    <section id="products" class="section pale" aria-label="Products">
-      <div class="wrap">
-        <h2 data-en="Products & Brands" data-bg="Продукти и марки"></h2>
-        <p data-en="We distribute premium bearing brands and keep a well-stocked warehouse for immediate dispatch."
-           data-bg="Дистрибутираме премиум марки лагери и поддържаме добре зареден склад за незабавна експедиция."></p>
-
-        <div class="brand-grid" aria-hidden="false">
-          <img src="bearing-brands.webp" alt="Brands logos collage" loading="lazy">
-        </div>
-
-      </div>
-    </section>
-
-    <section id="warehouse" class="section" aria-label="Warehouse">
-      <div class="wrap narrow">
-        <h2 data-en="Stock & Logistics" data-bg="Склад и логистика"></h2>
-        <p data-en="Our Sliven warehouse is optimized for fast picking and worldwide shipping. Large stock levels ensure minimal lead times."
-           data-bg="Нашият склад в Сливен е оптимизиран за бързо събиране на поръчки и международна доставка. Големите наличности осигуряват минимални срокове на доставка."></p>
-        <div class="grid-2">
-          <div class="card">
-            <h3 data-en="Ready Stock" data-bg="Наличност"></h3>
-            <p data-en="Thousands of SKUs in stock, same-day dispatch options available." data-bg="Хиляди артикули в наличност, възможности за експедиция в същия ден."></p>
-          </div>
-          <div class="card">
-            <h3 data-en="Fast Shipping" data-bg="Бърза доставка"></h3>
-            <p data-en="Reliable carriers and prioritized handling for business customers." data-bg="Надеждни превозвачи и приоритетна обработка за бизнес клиенти."></p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="contact" class="section" aria-label="Contact">
-      <div class="wrap">
-        <h2 data-en="Contact Us" data-bg="Контакт"></h2>
-        <p data-en="Address: UL. Svetlina 7/B, Sliven, Bulgaria 8800" data-bg="Адрес: ул. Светлина 7/B, Сливен, България 8800"></p>
-        <p data-en='Email: <a href="mailto:ibr2014bg@gmail.com">ibr2014bg@gmail.com</a>'
-           data-bg='Email: <a href="mailto:ibr2014bg@gmail.com">ibr2014bg@gmail.com</a>'></p>
-
-        <form id="contact-form" class="contact-form" action="mailto:ibr2014bg@gmail.com" method="post" enctype="text/plain" aria-label="Contact form">
-          <label for="name" data-en="Name" data-bg="Име"></label>
-          <input id="name" name="name" placeholder="" required>
-          <label for="email" data-en="Email" data-bg="Имейл"></label>
-          <input id="email" name="email" type="email" placeholder="" required>
-          <label for="message" data-en="Message" data-bg="Съобщение"></label>
-          <textarea id="message" name="message" rows="5" required></textarea>
-          <div class="form-row">
-            <button type="submit" class="btn primary" data-en="Send Message" data-bg="Изпрати"></button>
-            <button type="reset" class="btn ghost" data-en="Reset" data-bg="Изчисти"></button>
-          </div>
-        </form>
-
-      </div>
-    </section>
-
-  </main>
-
-  <footer class="site-footer">
-    <div class="wrap small">
-      <p>© 2025 IBR 2014 EOOD — <span data-en="All rights reserved" data-bg="Всички права запазени"></span></p>
+  <section id="hero">
+    <div class="hero-content">
+      <h2 data-en="Your Trusted Bearing Partner" 
+          data-bg="Вашият доверен партньор за лагери"></h2>
+      <p data-en="Supplying top-quality bearings and industrial solutions across Europe."
+         data-bg="Доставяме висококачествени лагери и индустриални решения в цяла Европа."></p>
     </div>
-  </footer>
+  </section>
 
+  <section id="about">
+    <h3 data-en="About Us" data-bg="За нас"></h3>
+    <p data-en="IBR 2014 EOOD, based in Sliven, Bulgaria, specializes in bearings and industrial products. We focus on quality, reliability, and customer satisfaction."
+       data-bg="IBR 2014 EOOD, базирана в Сливен, България, е специализирана в лагери и индустриални продукти. Ние се фокусираме върху качество, надеждност и удовлетвореност на клиентите."></p>
+  </section>
+
+  <section id="products">
+    <h3 data-en="Products & Brands" data-bg="Продукти и марки"></h3>
+    <p data-en="We work with the world's leading bearing manufacturers to ensure durability and performance."
+       data-bg="Работим с водещи световни производители на лагери, за да гарантираме издръжливост и производителност."></p>
+
+    <div class="brands">
+      <img src="bearing-brands.webp" alt="Bearing Brands - SKF, NTN, NSK, FAG, Koyo, IKO, etc.">
+    </div>
+  </section>
+
+  <section id="warehouse">
+    <h3 data-en="Stock & Logistics" data-bg="Склад и логистика"></h3>
+    <p data-en="Our modern warehouse in Sliven keeps a wide range of bearings ready for fast delivery."
+       data-bg="Нашият модерен склад в Сливен поддържа широка гама лагери, готови за бърза доставка."></p>
+
+    <div class="warehouse-image">
+      <img src="IS_1708.webp" alt="Bearing warehouse shelves with SKF boxes">
+    </div>
+  </section>
+
+  <section id="contact">
+    <h3 data-en="Contact Us" data-bg="Контакт"></h3>
+    <p data-en="Address: UL. Svetlina 7/B, Sliven, Bulgaria 8800" 
+       data-bg="Адрес: ул. Светлина 7/B, Сливен, България 8800"></p>
+    <p>Email: <a href="mailto:ibr2014bg@gmail.com">ibr2014bg@gmail.com</a></p>
+  </section>
+
+  <footer>
+    <p>© 2025 IBR 2014 EOOD — All Rights Reserved</p>
+  </footer>
 </body>
 </html>
