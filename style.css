@@ -21,11 +21,11 @@ header .container {
 }
 
 nav button {
-  margin-left: 5px;
+  margin-left: 8px;
   background: white;
   color: #002b5b;
   border: none;
-  padding: 5px 10px;
+  padding: 6px 12px;
   border-radius: 5px;
   cursor: pointer;
   font-weight: bold;
