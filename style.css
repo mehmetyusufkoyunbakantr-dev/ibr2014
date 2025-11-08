@@ -1,96 +1,76 @@
-body {
-  font-family: "Segoe UI", Arial, sans-serif;
-  margin: 0;
-  background-color: #f8f9fa;
-  color: #333;
-  line-height: 1.6;
+
+:root{
+  --blue:#002b5b;
+  --accent:#0078d7;
+  --bg:#f8f9fa;
+  --muted:#6b7280;
+  --max-width:1100px;
 }
 
-header {
-  background: #002b5b;
-  color: white;
-  padding: 1em 0;
+*{box-sizing:border-box}
+
+body{
+  margin:0;
+  font-family:Inter, "Segoe UI", Arial, sans-serif;
+  background:var(--bg);
+  color:#0f1724;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  line-height:1.5;
 }
 
-header .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 90%;
-  margin: auto;
-}
+.wrap{width:92%;max-width:var(--max-width);margin:0 auto}
 
-nav button {
-  margin-left: 8px;
-  background: white;
-  color: #002b5b;
-  border: none;
-  padding: 6px 12px;
-  border-radius: 5px;
-  cursor: pointer;
-  font-weight: bold;
-}
+.site-header{background:linear-gradient(90deg,var(--blue),#003b73);padding:16px 0;color:#fff;position:sticky;top:0;z-index:40;box-shadow:0 2px 8px rgba(2,6,23,0.08)}
+.site-header .brand-name{font-weight:700;letter-spacing:0.4px;font-size:1.05rem;color:#fff;text-decoration:none}
+.top-nav{display:flex;gap:8px;align-items:center}
 
-nav button:hover {
-  background: #0078d7;
-  color: white;
-}
+.lang-btn{background:#fff;border:0;padding:8px 12px;border-radius:6px;cursor:pointer;font-weight:600;color:var(--blue)}
+.lang-btn[aria-pressed="true"]{background:var(--accent);color:#fff}
 
-#hero {
-  background: linear-gradient(rgba(0, 43, 91, 0.7), rgba(0, 43, 91, 0.7)),
-    url("IS_1708.webp") center/cover no-repeat;
-  color: white;
-  text-align: center;
-  padding: 5em 1em;
-}
+.hero{padding:60px 0;color:#fff;background:linear-gradient(0deg, rgba(0,43,91,0.9), rgba(0,43,91,0.6)), url('IS_1708.webp') center/cover no-repeat;display:block}
+.hero-inner{display:flex;gap:32px;align-items:center;justify-content:space-between;flex-wrap:wrap}
+.hero-copy{flex:1;min-width:280px}
+.hero-copy h1{font-size:2rem;margin:0 0 12px}
+.lead{opacity:0.95;margin:0 0 18px;font-size:1.05rem;color:rgba(255,255,255,0.95)}
+.cta-row{display:flex;gap:12px;align-items:center}
+.btn{display:inline-block;padding:10px 16px;border-radius:8px;text-decoration:none;font-weight:700;cursor:pointer;border:2px solid transparent;font-size:0.95rem}
+.primary{background:var(--accent);color:#fff;border-color:var(--accent)}
+.ghost{background:transparent;color:#fff;border-color:rgba(255,255,255,0.18)}
 
-#hero h2 {
-  font-size: 2em;
-  margin-bottom: 0.5em;
-}
+.hero-media img{max-width:420px;width:100%;border-radius:10px;box-shadow:0 10px 30px rgba(2,6,23,0.2)}
 
-#hero p {
-  font-size: 1.2em;
-  max-width: 700px;
-  margin: auto;
-}
+/* Sections */
+.section{padding:48px 0;background:transparent;text-align:center}
+.section.pale{background:#fff;border-top:1px solid rgba(15,23,36,0.04)}
 
-section {
-  padding: 3em 1em;
-  max-width: 900px;
-  margin: auto;
-  text-align: center;
-}
+/* Typography */
+h2{color:var(--blue);font-size:1.4rem;margin:0 0 12px}
+p{color:var(--muted);margin:0 0 14px}
 
-h3 {
-  color: #002b5b;
-  font-size: 1.6em;
-  margin-bottom: 0.5em;
-}
+/* Brand grid */
+.brand-grid{display:flex;justify-content:center;align-items:center;margin-top:20px}
+.brand-grid img{max-width:860px;width:100%;border-radius:12px;object-fit:cover}
 
-.brands img,
-.warehouse-image img {
-  width: 100%;
-  max-width: 800px;
-  border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
-  margin: 1em 0;
-}
+/* Cards */
+.grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;margin-top:18px}
+.card{background:#fff;padding:18px;border-radius:10px;box-shadow:0 6px 20px rgba(2,6,23,0.06);text-align:left}
+.card h3{margin:0 0 8px;color:var(--blue)}
 
-footer {
-  background: #002b5b;
-  color: white;
-  text-align: center;
-  padding: 1em;
-  margin-top: 2em;
-  font-size: 0.9em;
-}
+/* Contact form */
+.contact-form{max-width:720px;margin:18px auto 0;text-align:left;background:#fff;padding:18px;border-radius:10px;box-shadow:0 6px 20px rgba(2,6,23,0.06)}
+.contact-form label{display:block;font-weight:600;margin-top:12px;color:var(--blue)}
+.contact-form input, .contact-form textarea{width:100%;padding:10px;border:1px solid #e6e9ee;border-radius:8px;margin-top:6px;font-size:0.95rem}
+.form-row{display:flex;gap:10px;margin-top:14px}
 
-@media (max-width: 768px) {
-  #hero h2 {
-    font-size: 1.5em;
-  }
-  #hero p {
-    font-size: 1em;
-  }
+/* Footer */
+.site-footer{background:var(--blue);color:#fff;padding:18px 0;margin-top:24px}
+.site-footer p{margin:0;text-align:center;color:rgba(255,255,255,0.9)}
+
+/* Responsiveness */
+@media (max-width:860px){
+  .hero-inner{flex-direction:column-reverse;align-items:center;text-align:center}
+  .grid-2{grid-template-columns:1fr}
+  .hero-media img{max-width:520px}
+  .brand-grid img{max-width:540px}
 }
