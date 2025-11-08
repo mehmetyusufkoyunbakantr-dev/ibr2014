@@ -9,6 +9,6 @@ document.addEventListener("DOMContentLoaded", () => {
     elements.forEach(el => el.textContent = el.dataset.bg);
   });
 
-  // Varsayılan: İngilizce
+  // Default language: English
   document.getElementById("lang-en").click();
 });

@@ -1,32 +1,80 @@
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Segoe UI", Arial, sans-serif;
   margin: 0;
-  background-color: #f5f5f5;
+  background-color: #f8f9fa;
   color: #333;
+  line-height: 1.6;
 }
 
 header {
   background: #002b5b;
   color: white;
+  padding: 1em 0;
+}
+
+header .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1em;
+  width: 90%;
+  margin: auto;
 }
 
 nav button {
   margin-left: 5px;
   background: white;
+  color: #002b5b;
   border: none;
   padding: 5px 10px;
   border-radius: 5px;
   cursor: pointer;
+  font-weight: bold;
+}
+
+nav button:hover {
+  background: #0078d7;
+  color: white;
+}
+
+#hero {
+  background: linear-gradient(rgba(0, 43, 91, 0.7), rgba(0, 43, 91, 0.7)),
+    url("IS_1708.webp") center/cover no-repeat;
+  color: white;
+  text-align: center;
+  padding: 5em 1em;
+}
+
+#hero h2 {
+  font-size: 2em;
+  margin-bottom: 0.5em;
+}
+
+#hero p {
+  font-size: 1.2em;
+  max-width: 700px;
+  margin: auto;
 }
 
 section {
-  padding: 2em;
-  max-width: 800px;
+  padding: 3em 1em;
+  max-width: 900px;
   margin: auto;
+  text-align: center;
+}
+
+h3 {
+  color: #002b5b;
+  font-size: 1.6em;
+  margin-bottom: 0.5em;
+}
+
+.brands img,
+.warehouse-image img {
+  width: 100%;
+  max-width: 800px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  margin: 1em 0;
 }
 
 footer {
@@ -34,4 +82,15 @@ footer {
   color: white;
   text-align: center;
   padding: 1em;
+  margin-top: 2em;
+  font-size: 0.9em;
+}
+
+@media (max-width: 768px) {
+  #hero h2 {
+    font-size: 1.5em;
+  }
+  #hero p {
+    font-size: 1em;
+  }
 }
